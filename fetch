@@ -1,0 +1,7 @@
+async function pilladatos () {
+  const url = 'http://api.petfinder.com/my.method?key=12345&arg1=foo';
+  let firstData = await fetch(url);
+  let data = await firstData.json();
+  console.log(data);
+  return data  
+}
